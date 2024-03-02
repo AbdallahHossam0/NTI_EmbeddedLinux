@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mkdir /home/abdallah/script_excercise
+
+for file in {1..5}
+do
+    touch  /home/abdallah/script_excercise/file$file
+    date > /home/abdallah/script_excercise/file$file
+done
+
+for file in {1..5}
+do 
+    echo "Content of file$file"
+    cat  /home/abdallah/script_excercise/file$file
+done
+
+
