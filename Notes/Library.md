@@ -9,7 +9,7 @@ There is 3 libraries used with Linux
     - it is size is almost 90 MB
 
 - MUSL: not a GNU library contains POSIX and C libraries
-    - it is a subset of uclib
+    - it is a subset of glibc
     - it is size is almost 84 MB
 
 uclib and MUSL mainly used for Embedded Linux. \ 
