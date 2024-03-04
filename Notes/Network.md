@@ -1,10 +1,10 @@
 # Network
 
 There is 4 common protocols in Embedded Linux
-- SSH   : 
-- SCP   :
-- TFTP  :
-- NFS   :
+- SSH    
+- SCP   
+- TFTP  
+- NFS  
 
 ## Remember the OSI (Open System Interconnection) Layers
 - Application layer
@@ -15,7 +15,7 @@ There is 4 common protocols in Embedded Linux
 - Data link layer
 - Physical layer
 
-## Remember the Reduced OSI (TCP layers) Layers
+## Remember the Reduced OSI (TCP) Layers
 - Application layer
 - Transport layer
 - Network layer
@@ -87,7 +87,7 @@ or use ip
 ip link set eth0 up/down
 ```
 - ping IP: it is used to ping ip on the network (checks if it is connected or not)
-- traceroute: show the hubs till I reach my destination, usually used for debugging
+- traceroute: show the hops till I reach my destination, usually used for debugging
 
 ip a: shows all ips on the network I connected on 
 
