@@ -1,0 +1,15 @@
+Q1- the solution is on binary_search.cpp
+
+Q2- The file is executed normally. /bin/local/bin is in PATH environment variable
+
+
+1- cat /etc/shells
+
+2- env or printenv
+
+3- echo $SHELL
+
+4- it is escape character used to escape the next character, make the arg able to be in multiple line -remember MACROs-
+
+5- alias PrintPATH='echo $PATH'
+

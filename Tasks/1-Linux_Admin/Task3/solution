@@ -1,0 +1,25 @@
+1- on script bash on the same folder
+
+
+2- ls /usr/bin /usr/sbin > UsrCommands
+
+3- you can do that by changing the .profile bash script
+
+4- wc => wc -l UsrCommands
+
+
+5- a. only the second file apprears, do cat file1 file2 instead
+b. it will delete all the content of the folder -expected-, it is not working  do rm * instead
+c. 1 => the output is of one line
+
+6. find / -name ".profile" => it will need the sudo permisiions 
+
+7. ls -i   [-i] to show the inodes
+
+8. ln -s => softlink => Failed permission denied (need sudo and it will work)
+
+9. ln => hard link => Operation not permitted // they are different partions (can't do hard link between different directies) 
+
+10. for multi line commands 
+you can edit the > to : in the .bashrc using echo 'PS1=": "' to be executed each time you open the terminal "it is called the default secondary prompt in many Unix/Linux Shells [the bash also provides that]"
+you need to rerun the ./.bashrc to make the edits run

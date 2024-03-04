@@ -1,0 +1,4 @@
+ar rcs libname.a file1.o file2.o file3.o
+
+gcc main.c -o funky.out -L. libname.a
+

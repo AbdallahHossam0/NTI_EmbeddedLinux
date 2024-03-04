@@ -68,11 +68,14 @@ it may includes global non static functions and static local vars and global non
 
 - archive the files together using the ar command 
 
-> ar -rcs libName.a x.o y.o z.o 
+> ar rcs libName.a x.o y.o z.o 
 
 r => for replace if found or insert if not found \
 c => create the library \
 s => add the symbol table 
+
+to compile 
+> gcc main.c -o funky.out -L. mylib.a
 
 
 ### Ro compile your code with the static library

@@ -1,0 +1,6 @@
+1- sudo groupadd -g 30000 pgroup
+2- sudo passwd -l username
+3- sudo userdel username
+4- sudo groupdel pgroup
+5- usradd is the basic commands in linux to add users, However, addusr is a bash script to add users in more simple and powerful way creating the user and its primary group and create its home folder and more 
+

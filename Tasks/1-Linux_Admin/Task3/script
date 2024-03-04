@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if test -e  "$HOME/.bashrc";then
+    echo "The file exists"
+    echo HELLO=$HOSTNAME >> "$HOME/.bashrc"
+    echo LOCAL="whoami" >> "$HOME/.bashrc"
+fi
+
+gnome-terminal

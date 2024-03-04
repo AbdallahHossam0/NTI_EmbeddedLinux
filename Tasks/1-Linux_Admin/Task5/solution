@@ -1,0 +1,27 @@
+1- 
+mkdir MyTeam
+chmod 400 ./MyTeam
+
+3-
+The file cannot be accessed as i am unable to execute any command on it 
+
+4-b. => to change the default permission you can do that using the umask
+umask is a built-in command 
+umask prints the current umask
+umask <value> set umask value to the given value
+
+4-c. the max permission is when the umask = 0
+it is 777 for folders and 666 for files
+
+4-d. the min possible permission is when umask = 777
+the persmissions will be 000 for files and dirs
+
+4-e. only root and with sudo command you can interact with the folder and file 
+
+5. Unable to edit the file -permission denied-
+The file is deleted successfully
+
+6. x in files means who can execute this file
+x in directories means who can apply commands on content in this file 
+
+

@@ -1,0 +1,24 @@
+1- red hat, kali, debian, mint
+
+2- man [command] is used to show the manual for this command
+   it shows also how to use it and what are the available options to be used with it
+   
+3- 
+rm: is used to delete files and it can delete empty folder using -d or delete non empty folders using -r
+rmdir: it can by default delete embty folders or delete non empty folders using -r
+
+6- to rename a file use to mv commnd mv oldname newname
+
+8- ls /bin/w*
+
+9- type [command] is used to get if the command is alias, internal shell command or external shell command
+
+10- 	type cat => znew is /usr/bin/cat
+	type cd   => cd is a shell builtin
+
+11- man -k read file (-k)
+
+12- search the manual page names and descriptions
+
+last question description is on myscript file on the same folder
+
