@@ -47,7 +47,7 @@ this tool os based on glibc library, what is I don't want that library?
 2. ./bootstrap
 3. ./configure --enable-local
 4. make
-5. ./ct-ng <>
+5. ./ct-ng < list-samples >
 6. ./ct-ng < sample you need to start with >
 7. ./ct-ng menuconfig (To enable you to customize the sample you want)
 8. ./ct-ng build

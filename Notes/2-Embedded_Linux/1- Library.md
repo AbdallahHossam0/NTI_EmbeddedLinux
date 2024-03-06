@@ -118,7 +118,7 @@ when an app that is dynamically linked starts executing, it will get some symbol
         unset LD_LIBRARY_PATH
     ```
     - if not found, it goes to check if the library path is given while compilation using the -wl, -rpath flag
-    > copy it form the lecture 
+    > gcc main.c -Wl,-rpath=path/to/library -lname -L.path/to/library -I path/to/includes -o out_file 
     - if not found, it goes to search for the library on /usr/bin and /usr/local/bin
     - if it is still not found, it throws an output, the dynamic library can't be solved
 4. if the library is found in any step, system-loader loads it on RAM and solve all the dependencies and the executable start executing
@@ -175,3 +175,4 @@ ldd a.out # its size is 884KB, all the library are linked in the file
 ```
 
 **strace**: used to trace the system calls in an executable
+**ltrace**: used to trace the library calls in an executable
