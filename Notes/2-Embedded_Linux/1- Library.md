@@ -89,6 +89,41 @@ Note:
 gcc main.c -I <path> # used to give the path of the includes 
 ```
 
+### The output of the static library is the elf file
+
+The elf file structure is
+
+|ElF file contents|
+|-|
+ELF Header
+Symbol Table
+.vect
+.text
+.rodata
+.data
+debug symbols
+
+The flasher don't flash all of those in the MCU Flash, it just can flash .vect, .text, .data and .rodata, it may flash the symbol table 
+
+if the symbol table is not flashed, to debug you need to get the address of all variables
+
+To check the type of the file
+> file file-name 
+
+### readelf -better view- and objdump -more common-
+These tools are used to read the elf files
+```bash
+objdump -x # shows elf header, dynamic library section, code section, and symbol table
+
+objdump -t # to show the symbol table only
+
+objdump -s # to show the assembly code will be flashed
+
+readelf -h # to show the elf header
+```
+
+
+
 ## Dynamic -Shared- Libraries
 We usually used a shared library to build the Linux from scratch
 
