@@ -174,7 +174,4 @@ ldd a.out # its size is 884KB, all the library are linked in the file
 # it will show the that not a dynamic executable 
 ```
 
-
-
-
-
+**strace**: used to trace the system calls in an executable
