@@ -26,7 +26,7 @@ glibc: may be used in Embedded Linux in large projects with high computational p
     - semantic analysis
     - code optimization 
     - create symbol table 
-    - add debug info
+    - add debug symbols
     - generate assembly -target dependent-
 - Linker:
     - resolve the symbol table 
@@ -100,7 +100,7 @@ Symbol Table
 .vect
 .text
 .rodata
-.data
+.data initial values
 debug symbols
 
 The flasher don't flash all of those in the MCU Flash, it just can flash .vect, .text, .data and .rodata, it may flash the symbol table 
