@@ -139,8 +139,8 @@ the number after ---|---|--- represents the number of the hard links
 - w = write
 - x = execute
 
-default for files = 777 - umask (default = 2)\
-default for directories = 666 - umask 
+default for files = 666 - umask (default = 2)\
+default for directories = 777 - umask 
 
 to change the umask just umask < new value >
 
