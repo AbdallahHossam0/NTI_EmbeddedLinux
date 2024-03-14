@@ -84,6 +84,7 @@ In linux, Everything is a file, The folder is a file
 - grep -v <text>: show anything that don't include the text passed
 - uname -a: to show all the system information
 - curl ifconfig.me: to get my global ip address that will help me stablish a ssh connection through different networks
+- basename: if you give a relative path to a dir => it will extract the dir name from the path
  
 Notes: ~ means /home/current_user \
 cd - means the back directory \
