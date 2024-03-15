@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+if [ $# -lt "1" ]
+then
+    echo "You should pass 1 arg or more"
+else
+
+    mkdir -p backups
+
+    for dir in "${@:1}"
+    do
+        if [ -d $dir ]
+        then
+            dirname=$(basename "$dir")
+
+            if tar -czf "backups/backup_$dirname$(date +"_%d-%m-%Y__%I:%M:%S_%p").tar.gz" -C "$(dirname "$dir")" "$(basename "$dir")"
+            then
+                echo "$dir backup is created successfully"
+            else
+                echo "$dir backup is not created"
+            fi
+        else
+            echo "folder is not found"
+        fi
+
+    done
+
+fi

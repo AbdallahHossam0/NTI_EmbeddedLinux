@@ -63,6 +63,13 @@ This table is stored in ARP cache (a table storing IP-to-MAC address mappings)
 - it runs over the SSH connection
 - used for secure file transferring between client and server 
 - **Port 22** is used.
+```bash
+# to copy a file using scp between different devices on the same network
+scp path/to/file < destination >
+# the destination could be
+# abdallah@192.168.56.13
+# abdallah@host-machine-name
+```
 
 ### TFTP -Trivial File Transfer Protocol-
 - Lightweight protocol used for transferring files between devices in a network.

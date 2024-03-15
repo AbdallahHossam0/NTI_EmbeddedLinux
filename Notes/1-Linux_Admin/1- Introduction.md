@@ -43,7 +43,7 @@ In linux, Everything is a file, The folder is a file
     - sbin: system commands & executable files
     - lib: shared library files
     - includes: contains the c libraries
-- boot: kernel & boot-loader
+- boot: kernel & boot-loader, your image is on /boot/vmlinuz
 - mnt: mount points for internal storage
 - media: mount points for storage media
 - etc: configuration files and startup scripts
@@ -83,8 +83,15 @@ In linux, Everything is a file, The folder is a file
 - ls -i: to list i-nodes
 - grep -v <text>: show anything that don't include the text passed
 - uname -a: to show all the system information
+- lsb_release -a: show the distro information 
 - curl ifconfig.me: to get my global ip address that will help me stablish a ssh connection through different networks
 - basename: if you give a relative path to a dir => it will extract the dir name from the path
+- mkdir: used to create a folder
+- mkdir -p: check if the folder does not exist before creating it, if it is already exist, nothing will happen
+- insmode: used to insert modules to the kernel 
+- rmmode: used to remove modules from the kernel
+- dmesg: used to check the kernel info and the debug information about the kernel, we can use to check if a module is added to the kernel 
+
  
 Notes: ~ means /home/current_user \
 cd - means the back directory \
