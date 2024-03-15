@@ -48,7 +48,7 @@ In linux, Everything is a file, The folder is a file
 - media: mount points for storage media
 - etc: configuration files and startup scripts
 - tmp: stores temporary files
-- sys: size = 0 {it is 0 in disk as it is stored in RAM}
+- sys: size = 0 {it is 0 in disk as it is stored in RAM}, /sys/class includes all the available drivers
 - dev: hardware device files (nodes)
 - proc: virtual process files [the size is 0 in disk as it is stored in RAM]
 - root: root home directory
