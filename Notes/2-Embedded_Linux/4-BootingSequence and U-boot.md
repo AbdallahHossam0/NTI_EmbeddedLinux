@@ -146,6 +146,49 @@ what is the difference between emulator and simulator?
 ### Some Commands
 - setenv (var) (value)
 - saveenv
+- echo 
+- run 
+- printenv or echo $
+- ls mmc 0:1
+- md => memory display
+- bdinfo => board information
+- fatload
+- bootz
+- tftp
+
+### Common variables
+- kernel_addr_r => where the kernel should be loaded in RAM
+- fdt_addr_r => where the dtb should be loaded
+
+
+### poplar work flows
+```bash
+# to load the a file from sd card to RAM
+fatload mmc 0:1 $kernel_addr_r /path/to/file
+
+# To boot the kernel and the dtb from the ram 
+bootz $kernel_addr_r $fdt_addr_r
+
+# to get a file through the network Eth
+tftp $kernel_addr_r  /path/to/file
+
+# you will need to specify the board ip address and server ip addresses before get the files over the eth
+
+setenv ipaddr 192.168.0.101
+setenv serverip < Tap0 inet ip >
+```
+
+### Some notes about Linux to work with the tftp
+```bash
+# to test the eth status
+systemctl status tftp 
+```
+
+- tftp only access the folders given in the file /etc/default/tftpd.hpa in the tftp-directory section **The default is /srv/tftp**
+
+- but the tftp user has no access to this folder, so you need to change the the owner and group of this file to tftp or give other access to rwx
+
+
 
 
 ### How to work with it
