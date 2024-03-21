@@ -8,4 +8,9 @@
 
 **Note**: no addresses for the file register, so, the register marked variables have no addresses
 
+DTS -------> DTC ---------> DTB \
+DTS = Device Tree Source \
+DTC = Device Tree Compiler \
+DTB = Device Tree Blob
+
 
