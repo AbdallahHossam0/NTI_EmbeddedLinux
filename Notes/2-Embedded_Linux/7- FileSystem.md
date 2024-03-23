@@ -14,13 +14,27 @@
         - mnt
     - sudo mkdir home srv proc etc dev sys mnt
 
+### Remember that 
+- bin and sbin folder are usually a soft link to usr/bin and usr/sbin
+- busy box has no bash 
+- the default shell is ash
+
+
+## To work with it
+1. clone
+2. make menuconfig {choose which binaries to include in filesystem}
+3. pass the arch, and the cross tool chain
+4. make install
+5. the binaries are in _install directory
+
+
 **You have to change all these dirs own and group to be root:root**
 chown -R root:root rootfs/*
 
 ```bash
 # you can use cp or rsync
 cp < src > < dst >
-rsync < src > < dst >
+rsync -a < src > < dst >
 
 # to copy with out changing the ownership and group of file use 
 cp -P
@@ -58,4 +72,14 @@ mount -t sysfs null /sys/
 # To show the mount points 
 mount
 ```
+
+### The init process created with the busy box, is the busy box init by default 
+
+
+# Remember
+```bash
+# to show all the processes
+ps -a 
+```
+
 

@@ -2,6 +2,8 @@
 
 ### This file is used to make the kernel independent on the internal or external interfaces 
 
+it a description for HW connected to CPU on SOC or Board
+
 ### It's a description of the interfaces connected to the CPU and the board and their addresses, it is a dictionary => key and value
 
 ### DTB is unique for each board
