@@ -55,7 +55,6 @@ this workflow is time consuming and error prone
 ### Build Root
 - Simple efficient tool
 - **Monolithic Approach**: Unlike Yocto, Buildroot follows a more monolithic approach, providing a single configuration file that defines all aspects of the target system.
-- Not Incremental Build
 - Limited flexibility
 
 #### In summary, Yocto is more suitable for complex projects that require high customization and flexibility, while Buildroot is better suited for simpler projects where ease of use and a streamlined build process are priorities. The choice between the two depends on the specific requirements and constraints of the embedded Linux pro
