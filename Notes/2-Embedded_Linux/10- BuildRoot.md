@@ -107,3 +107,11 @@ make -jx
 # replace x with the number of cores you need to use by make
 ```
 menuconfigs uses packages/config-in as input file and convert it to be a GUI
+
+
+## Notes
+- if the image for a real board, it outputs the sd card, and to copy it into the real physical sd card, you should use dd
+- to format an sd card use dd if=/dev/zero (raw format)
+- ip a => show all interfaces
+- ifconfig => shows the running interfaces
+

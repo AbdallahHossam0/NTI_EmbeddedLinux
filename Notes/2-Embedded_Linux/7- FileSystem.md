@@ -18,7 +18,7 @@
 - bin and sbin folder are usually a soft link to usr/bin and usr/sbin
 - busy box has no bash 
 - the default shell is ash
-
+- busy box gives me the linux basic binaries, for more binaries, => clone, compile, combine, as you did with the cross tool chain
 
 ## To work with it
 1. clone

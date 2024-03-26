@@ -91,8 +91,11 @@ In linux, Everything is a file, The folder is a file
 - insmode: used to insert modules to the kernel 
 - rmmode: used to remove modules from the kernel
 - dmesg: used to check the kernel info and the debug information about the kernel, we can use to check if a module is added to the kernel 
+- ps aux : ps > show the processes currently runnig by this terminal
+	- a : to show all processes, not just those associated to this Terminal
+	- u : more info displayed, owner, CPU and memory usage, start time
+	- x : show the background tasks also 
 
- 
 Notes: ~ means /home/current_user \
 cd - means the back directory \
 you can't create directories in the root directory
@@ -272,3 +275,7 @@ tar -xXf polo.tar.X
 # z for gzip
 ```
 
+## Notes
+- Linux is non real-time, but it can be configured to be real time
+- The boot loader is the first image and the kernel is the second image
+- every thing in Linux appears as a file 

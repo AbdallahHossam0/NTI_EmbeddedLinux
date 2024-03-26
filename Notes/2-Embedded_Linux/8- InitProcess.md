@@ -4,6 +4,7 @@
 - it is id is 1
 - its path is /sbin/init
 - it usually runs the shell
+- who runs it => the kernel
 
 - for busy box init process, it needs a configuration file called inittab (this file exists in the old Unix/Linux systems) [not on my ubuntu system]
 
@@ -20,13 +21,17 @@
 ## Init Process Types
 1. Busybox => simple and lightweight
 2. systemV => on UNIX
-3. systemd => on Linux
+3. systemd => on Linux 2010 -> 2015
+4. open rc
+5. run it
+
+
 
 ## 1. Busybox
 - inittab
 - rcS
 
-## 2. SystemV
+## 2. SystemV (for loop)
 it has 7 modes:
 1. Runlevel 0: **Halt or shutdown mode.** The system is powered off or shut down gracefully.
 
@@ -41,6 +46,11 @@ it has 7 modes:
 6. Runlevel 5: **Multi-user mode with full network support and a graphical user interface (GUI).** This mode is similar to Runlevel 3 but includes the graphical environment for users who prefer a GUI interface.
 
 7. Runlevel 6: **Reboot mode.** The system initiates a reboot, shutting down all running processes and restarting the system.
+
+#### Note:
+systemV is used in automotive to go to another run level when downloading the code and close all the gui to make downloading uses all the cpu power to speed up the downloading process.\
+downloading is done under the eyes of the kernel.\
+it is a GUI application runs on the kernel the kernel do the re-flashing not the boot-loader
 
 ---
 ---
@@ -68,7 +78,7 @@ the name format is as follows
 ---
 ---
 ---
-inittab
+### inittab
 
 ```
 # each time any mode of 12345 runs, run the rcS
@@ -98,3 +108,15 @@ esac
 - to switch between mode 
 telinit {mode number}
 
+## Systemd in a separated file 
+
+
+
+
+# Process types
+1. foreground
+2. background
+3. init process
+4. orphaned process
+5. zombie process
+6. daemon process => normal app runs in the background, kernel starts and stops it without user interactions, called by systemctl, example => logging in dmesg
