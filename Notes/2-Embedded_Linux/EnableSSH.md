@@ -21,5 +21,9 @@ ip address add 192.168.0.11/24 dev eth0
 ## Run the SSH
 ![alt text](<WhatsApp Image 2024-03-28 at 17.36.14_a3ffadb3.jpg>)
 
+## Stop The SSH
+```bash
+exit
+``` 
 
 # *No need for systemd*
