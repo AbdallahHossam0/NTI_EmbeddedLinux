@@ -24,8 +24,10 @@ old bootargs
 
 setenv bootargs=console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 rw init=/sbin/init
 
+setenv bootargs "console=ttyAMA0 root=/dev/nfs ip=192.168.0.100:::::tap0 nfsroot=192.168.0.1:/home/abdallah/x-tools/rootfs,nfsvers=3,tcp rootfstype=ext4 rw init=/sbin/init"
+
 
 new bootargs
 
-setenv bootargs console=ttyAMA0 root=/dev/nfs ip=192.168.0.100:::::eth0 nfsroot=192.168.0.1:/home/abdallah/x-tools/rootfs,nfsvers=3,tcp rw init=/sbin/init
+setenv bootargs "console=ttyAMA0 root=/dev/nfs ip=192.168.0.100:::::eth0 nfsroot=192.168.0.1:/home/abdallah/x-tools/rootfs,nfsvers=3,tcp rw init=/sbin/init"
 

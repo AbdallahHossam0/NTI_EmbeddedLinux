@@ -5,6 +5,8 @@
 ![alt text](image-1.png)
 
 
+# Add it to the menu-config
+![alt text](image-2.png)
 
 # To edit the code of the package
 
